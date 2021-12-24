@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Lesson 40 Javascript ile Collapse Kullanımı</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mb-5">
+        <h1 class="display-3 text-uppercase text-center">Collapse Kullanımı 2 - with Javascript</h1>
+
+        <h6 class="text-lowercase text-right">show= gösterilecek</h6>
+        <h6 class="text-lowercase text-right">shown= gösterildi</h6>
+        <h6 class="text-lowercase text-right">hide= gizlenecek</h6>
+        <h6 class="text-lowercase text-right mb-5">hidden= gizlendi</h6>
+        <p>
+            <button type="button" id="btnID" class="btn btn-danger" aria-expanded="false"
+                aria-controls="#CollapseID">Toggle</button>
+            <button type="button" class="btn btn-success" aria-expanded="false"
+                aria-controls="#CollapseID">Show</button>
+            <button type="button" class="btn btn-dark" aria-expanded="false" aria-controls="#CollapseID">Hide</button>
+        </p>
+        <div id="CollapseID" class="collapse">
+            <div class="card border-success">
+                <div class="card-body text-success">
+                    <h5 class="card-title">Collapse Kullanımı</h5>
+                    <p class="card-text">ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.btn-danger').click(function () {
+                $('.collapse').collapse('toggle');
+            });
+            $('.btn-success').click(function () {
+                $('.collapse').collapse('show');
+            });
+            $('.btn-dark').click(function () {
+                $('.collapse').collapse('hide');
+            });
+
+            $('.collapse').on('show.bs.collapse', function () {
+                alert('İçerik gösterilmek üzere');
+                $('#btnID').toggleClass('btn-dark').toggleClass('btn-danger');
+            });
+            $('.collapse').on('shown.bs.collapse', function () {
+                alert('İçerik gösterildi');
+                $('#btnID').toggleClass('btn-dark').toggleClass('btn-danger');
+            });
+            $('.collapse').on('hide.bs.collapse', function () {
+                alert('İçerik gizlenmek üzere');
+                $('#btnID').toggleClass('btn-dark').toggleClass('btn-danger');
+            });
+            $('.collapse').on('hidden.bs.collapse', function () {
+                alert('İçerik gizlendi');
+                $('#btnID').toggleClass('btn-dark').toggleClass('btn-danger');
+            });
+        });
+    </script>
+</body>
+
+</html>

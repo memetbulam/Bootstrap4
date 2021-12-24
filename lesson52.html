@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Lesson 52 Form Validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        body {
+            margin-bottom: 60px;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar bg-dark navbar-dark navbar-expand-lg">
+        <a href="#" class="navbar-brand"><img src="img/logo.png" alt="logo" style="width: 40px;"> Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavbarContentID"
+            aria-expanded="false" aria-label="Toggle Buton" aria-controls="NavbarContentID"><span
+                class="navbar-toggler-icon"></span></button>
+        <div id="NavbarContentID" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a href="#" class="nav-link">Home<span class="sr-only">Aktif
+                            sayfa</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="DropID" data-toggle="dropdown" role="button"
+                        aria-haspopup="true" aria-expanded="false">Software</a>
+                    <div class="dropdown-menu mt-3" aria-labelledby="DropID">
+                        <a href="#" class="dropdown-item">JS</a>
+                        <a href="#" class="dropdown-item">Angular JS</a>
+                        <a href="#" class="dropdown-item">React JS</a>
+                        <a href="#" class="dropdown-item">Vue JS</a>
+                        <a href="#" class="dropdown-item">Node JS</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Messages</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Settings</a></li>
+                <li class="nav-item"><a href="#" class="nav-link disabled">Contact<span class="sr-only">Pasif
+                            sayfa</span></a></li>
+            </ul>
+
+            <span class="navbar-text mr-3">Metin kısmı</span>
+            <form class="form-inline" action="#">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Arama">
+                <button class="btn btn-outline-success my-2" type="submit">Search</button>
+                <!-- <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="Add">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="Add">
+                </div> -->
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="container my-5">
+        <h1 class="display-4 text-center text-uppercase">Form Validation</h1>
+        <!-- <form class="needs-validation" novalidate>
+            <div class="form-row">
+                <div class="col-4 mb-3">
+                    <label for="validationCustom01">Ad</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="First name"
+                        value="Ahmet">
+                    <div class="valid-feedback">Ad alanı tamamlandı!</div>
+                    <div class="invalid-feedback">Ad alanı boş geçilemez!</div>
+                </div>
+                <div class="col-4 mb-3">
+                    <label for="validationCustom02">Soyad</label>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Last name"
+                        value="Helvacı">
+                    <div class="valid-feedback">Soyad alanı tamamlandı!</div>
+                    <div class="invalid-feedback">Soyad alanı boş geçilemez!</div>
+                </div>
+                <div class="col-4 mb-3">
+                    <label for="validationCustomUsername">Kullanıcı Adı</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        </div>
+                        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username"
+                            aria-describedby="inputGroupPrepend" required>
+                        <div class="valid-tooltip">Kullanıcı Adı alanı tamamlandı!</div>
+                        <div class="invalid-tooltip">Kullanıcı Adı alanı boş geçilemez!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-6 mb-3">
+                    <label for="validationCuston03">İl</label>
+                    <input type="text" class="form-control" id="validationCuston03" placeholder="City" required>
+                    <div class="valid-tooltip">İl alanı tamamlandı!</div>
+                    <div class="invalid-tooltip">İl alanı boş geçilemez!</div>
+                </div>
+                <div class="col-3 mb-3">
+                    <label for="validationCuston04">İlçe</label>
+                    <input type="text" class="form-control" id="validationCuston04" placeholder="State" required>
+                    <div class="valid-feedback">İlçe alanı tamamlandı!</div>
+                    <div class="invalid-feedback">İlçe alanı boş geçilemez!</div>
+                </div>
+                <div class="col-3 mb-3">
+                    <label for="validationCuston05">Posta Kodu</label>
+                    <input type="text" class="form-control" id="validationCuston05" placeholder="Zip Code" required>
+                    <div class="valid-feedback">Posta Kodu alanı tamamlandı!</div>
+                    <div class="invalid-feedback">Posta Kodu alanı boş geçilemez!</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">Şart ve Koşulları Kabul Ediyorum</label>
+                    <div class="invalid-feedback">Şart ve Koşulları Kabul Etmeden İlerleyemezsiniz!</div>
+                </div>
+            </div>
+            <button class="btn btn-dark" type="submit">Formu Gönder</button>
+        </form> -->
+
+        <form class="was-validated">
+            <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                <label class="custom-control-label" for="customControlValidation1">Custom Checkbox</label>
+                <div class="invalid-feedback">Custom Checkbox alanı boş geçilemez!</div>
+            </div>
+            <div class="custom-control custom-radio mb-3">
+                <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked"
+                    required>
+                <label class="custom-control-label" for="customControlValidation2">Option 2 Custom Radio</label>
+            </div>
+            <div class="custom-control custom-radio mb-3">
+                <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked"
+                    required>
+                <label class="custom-control-label" for="customControlValidation3">Option 3 Custom Radio</label>
+                <div class="invalid-feedback">Custom Radio alanı boş geçilemez!</div>
+            </div>
+            <div class="form-group">
+                <select class="custom-select" required>
+                    <option class="custom-select" value="">Select Menü</option>
+                    <option class="custom-select" value="1">One</option>
+                    <option class="custom-select" value="2">Two</option>
+                    <option class="custom-select" value="3">Three</option>
+                </select>
+                <div class="invalid-feedback">Custom Select alanı boş geçilemez!</div>
+            </div>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="CustomFile" required>
+                <label for="CustomFile" class="custom-file-label">Dosya Seç</label>
+                <div class="invalid-feedback">Custom File alanı boş geçilemez!</div>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() == false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false)
+                });
+            }, false);
+        })();
+    </script>
+</body>
+
+</html>

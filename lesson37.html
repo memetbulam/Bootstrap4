@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Lesson 37 Dropdown Kullanımı (Bölüm 2)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container mb-5">
+        <h1 class="display-3 text-uppercase text-center">Dropdown 2</h1>
+        <h3 class="text-uppercase">dropdown - dropright - dropleft</h3>
+        <div class="dropdown dropright">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="Menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Button</button>
+            <div class="dropdown-menu" aria-labelledby="Menu">
+                <h5 class="dropdown-header">İstemci Bazlı JS</h5>
+                <a href="#" class="dropdown-item">JS</a>
+                <a href="#" class="dropdown-item disabled">Angular JS</a>
+                <a href="#" class="dropdown-item">React JS</a>
+                <div class="dropdown-divider"></div>
+                <h5 class="dropdown-header">Sunucu Bazlı JS</h5>
+                <a href="#" class="dropdown-item active">Node JS</a>
+            </div>
+        </div>
+
+        <hr class="my-5">
+        <h3 class="text-uppercase">dropdown - menüyü sağda açma</h3>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="Menu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Uzun Button Dropdown Uzun Button Dropdown Uzun Button Dropdown Uzun Button</button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Menu2">
+                <h5 class="dropdown-header">İstemci Bazlı JS</h5>
+                <a href="#" class="dropdown-item">JS</a>
+                <a href="#" class="dropdown-item disabled">Angular JS</a>
+                <a href="#" class="dropdown-item">React JS</a>
+                <div class="dropdown-divider"></div>
+                <h5 class="dropdown-header">Sunucu Bazlı JS</h5>
+                <a href="#" class="dropdown-item active">Node JS</a>
+            </div>
+        </div>
+
+        <hr class="my-5">
+        <h3 class="text-uppercase">dropup - yukarıya dogru açılır</h3>
+        <div class="dropup">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="Menu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DropUp Button</button>
+            <div class="dropdown-menu" aria-labelledby="Menu3">
+                <h5 class="dropdown-header">İstemci Bazlı JS</h5>
+                <a href="#" class="dropdown-item">JS</a>
+                <a href="#" class="dropdown-item disabled">Angular JS</a>
+                <a href="#" class="dropdown-item">React JS</a>
+                <div class="dropdown-divider"></div>
+                <h5 class="dropdown-header">Sunucu Bazlı JS</h5>
+                <a href="#" class="dropdown-item active">Node JS</a>
+            </div>
+        </div>
+
+        <hr class="my-5">
+        <h3 class="text-uppercase">dropdown - Normal Link </h3>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="Menu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Button</button>
+            <div class="dropdown-menu" aria-labelledby="Menu4">
+                <h5 class="dropdown-header">İstemci Bazlı JS</h5>
+                <a href="#" class="dropdown-item">JS</a>
+                <a href="#" class="dropdown-item">Angular JS</a>
+                <a href="#" class="dropdown-item-text">React JS</a>
+                <div class="dropdown-divider"></div>
+                <h5 class="dropdown-header">Sunucu Bazlı JS</h5>
+                <a href="#" class="dropdown-item">Node JS</a>
+                <span class="dropdown-item-text">Düz metin - Link değil</span>
+            </div>
+        </div>
+
+        <hr class="my-5">
+        <h3 class="text-uppercase">dropdown - button group </h3>
+        <div class="btn-group">
+            <button class="btn btn-success" type="button">Normal Button</button>
+            <button class="btn btn-success" type="button">Normal Button 2</button>
+            <div class="btn-group">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="Menu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Button</button>
+                <div class="dropdown-menu" aria-labelledby="Menu5">
+                    <h5 class="dropdown-header">İstemci Bazlı JS</h5>
+                    <a href="#" class="dropdown-item">JS</a>
+                    <a href="#" class="dropdown-item">Angular JS</a>
+                    <a href="#" class="dropdown-item">React JS</a>
+                    <div class="dropdown-divider"></div>
+                    <h5 class="dropdown-header">Sunucu Bazlı JS</h5>
+                    <a href="#" class="dropdown-item">Node JS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

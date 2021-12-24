@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Lesson 44 Navbar Yapımı (Bölüm 1)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="display-3 text-uppercase text-center">Navbar Yapımı (Bölüm 1)</h1>
+    <h1 class="text-uppercase">renkler</h1>
+    <h6 class="mr-5 text-right text-lowercase">navbar-expand= Responsiv yapar, genişletir</h6>
+    <h6 class="mb-5 mr-5 text-right text-lowercase">justify-content-center ,end= ortala, en sağ</h6>
+    <nav class="navbar bg-light navbar-expand-sm">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Messages</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Settings</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Messages</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Settings</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+    <nav class="navbar bg-warning navbar-expand-sm">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Messages</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Settings</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <hr class="my-5">
+    <h1 class="text-uppercase">active, disable, logo</h1>
+    <nav class="navbar bg-dark navbar-dark navbar-expand-md">
+        <a href="#" class="navbar-brand"><img src="img/logo.png" alt="logo" style="width: 40px;"> Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavbarContentID"
+            aria-expanded="false" aria-label="Toggle Buton" aria-controls="NavbarContentID"><span
+                class="navbar-toggler-icon"></span></button>
+        <div id="NavbarContentID" class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a href="#" class="nav-link">Home<span class="sr-only">Aktif
+                            sayfa</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Messages</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Settings</a></li>
+                <li class="nav-item"><a href="#" class="nav-link disabled">Contact<span class="sr-only">Engellenmiş
+                            sayfa</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="container-fluid my-5">
+        <h1>Container</h1>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Lesson 65 Flex Nedir, Nasıl Kullanılır</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--Nav Menu-->
+    <nav class="navbar bg-dark navbar-dark navbar-expand-lg">
+        <a href="#" class="navbar-brand"><img src="img/logo.png" alt="logo" style="width: 40px;"> Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavbarContentID"
+            aria-expanded="false" aria-label="Toggle Buton" aria-controls="NavbarContentID"><span
+                class="navbar-toggler-icon"></span></button>
+        <div id="NavbarContentID" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a href="#" class="nav-link">Home<span class="sr-only">Aktif
+                            sayfa</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="DropID" data-toggle="dropdown" role="button"
+                        aria-haspopup="true" aria-expanded="false">Software</a>
+                    <div class="dropdown-menu mt-3" aria-labelledby="DropID">
+                        <a href="#" class="dropdown-item">JS</a>
+                        <a href="#" class="dropdown-item">Angular JS</a>
+                        <a href="#" class="dropdown-item">React JS</a>
+                        <a href="#" class="dropdown-item">Vue JS</a>
+                        <a href="#" class="dropdown-item">Node JS</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Messages</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Settings</a></li>
+                <li class="nav-item"><a href="#" class="nav-link disabled">Contact<span class="sr-only">Pasif
+                            sayfa</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-toggle="modal" data-target="#OpenModalID"
+                        data-backdrop="static" data-keyboard="false">Sing İn</a></li>
+            </ul>
+
+            <span class="navbar-text mr-3">Metin kısmı</span>
+            <form class="form-inline" action="#">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Arama">
+                <button class="btn btn-outline-success my-2" type="submit">Search</button>
+                <!-- <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="Add">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="Add">
+                </div> -->
+            </form>
+        </div>
+    </nav>
+    <div class="container-fluid my-5">
+        <h1 class="display-4 text-center text-uppercase mb-5">Flex Nedir, Nasıl Kullanılır</h1>
+        <h3 class="text-uppercase mb-5">d-flex</h3>
+        <div class="d-flex p-2 bg-secondary">
+            <div class="p-3 bg-danger text-white">d-flex Flex Item 1</div>
+            <div class="p-3 bg-dark text-white">d-flex Flex Item 2</div>
+            <div class="p-3 bg-warning text-white">d-flex Flex Item 3</div>
+            <div class="p-3 bg-primary text-white">d-flex Flex Item 4</div>
+            <div class="p-3 bg-success text-white">d-flex Flex Item 5</div>
+            <div class="p-3 bg-info text-white">d-flex Flex Item 6</div>
+            <div class="p-3 bg-white">d-flex Flex Item 7</div>
+        </div>
+
+        <hr class="my-5">
+        <h3 class="text-uppercase mb-5">Default</h3>
+        <div class="p-2 bg-secondary">
+            <div class="p-3 bg-danger text-white">Default Item 1</div>
+            <div class="p-3 bg-dark text-white">Default Item 2</div>
+            <div class="p-3 bg-warning text-white">Default Item 3</div>
+            <div class="p-3 bg-primary text-white">Default Item 4</div>
+            <div class="p-3 bg-success text-white">Default Item 5</div>
+            <div class="p-3 bg-info text-white">Default Item 6</div>
+            <div class="p-3 bg-white">Default Item 7</div>
+        </div>
+
+        <hr class="my-5">
+        <h3 class="text-uppercase mb-5">md flex , d-inline-flex</h3>
+        <div class="d-md-flex p-2 bg-secondary">
+            <div class="p-3 bg-danger text-white">md Flex Item 1</div>
+            <div class="p-3 bg-dark text-white">md Flex Item 2</div>
+            <div class="p-3 bg-warning text-white">md Flex Item 3</div>
+            <div class="p-3 bg-primary text-white">md Flex Item 4</div>
+            <div class="p-3 bg-success text-white">md Flex Item 5</div>
+            <div class="p-3 bg-info text-white">md Flex Item 6</div>
+            <div class="p-3 bg-white">md Flex Item 7</div>
+        </div>
+
+        <hr class="my-5">
+        <h3 class="text-uppercase mb-5">d-inline-flex</h3>
+        <div class="d-md-inline-flex p-2 bg-secondary">
+            <div class="p-3 bg-danger text-white">Inline Flex Item 1</div>
+            <div class="p-3 bg-dark text-white">Inline Flex Item 2</div>
+            <div class="p-3 bg-warning text-white">Inline Flex Item 3</div>
+        </div>
+        <div class="d-inline-flex p-2 bg-secondary">
+            <div class="p-3 bg-danger text-white">Inline Flex Item 1</div>
+            <div class="p-3 bg-dark text-white">Inline Flex Item 2</div>
+            <div class="p-3 bg-warning text-white">Inline Flex Item 3</div>
+            <div class="p-3 bg-primary text-white">Inline Flex Item 4</div>
+            <div class="p-3 bg-success text-white">Inline Flex Item 5</div>
+        </div>
+
+        <hr class="my-5">
+        <h3 class="text-uppercase mb-5"> flex-row= Default</h3>
+        <div class="d-flex flex-row p-2 bg-secondary">
+            <div class="p-3 bg-danger text-white">Flex Item 1</div>
+            <div class="p-3 bg-dark text-white">Flex Item 2</div>
+            <div class="p-3 bg-warning text-white">Flex Item 3</div>
+            <div class="p-3 bg-primary text-white">Flex Item 4</div>
+        </div>
+        <div class="d-flex flex-row-reverse p-2 bg-secondary">
+            <div class="p-3 bg-danger text-white">Flex Item 1</div>
+            <div class="p-3 bg-dark text-white">Flex Item 2</div>
+            <div class="p-3 bg-warning text-white">Flex Item 3</div>
+            <div class="p-3 bg-primary text-white">Flex Item 4</div>
+        </div>
+
+        <hr class="my-5">
+        <h3 class="text-uppercase mb-5"> flex-column= Dikey hizala</h3>
+        <div class="d-flex flex-column p-2 bg-secondary mb-5">
+            <div class="p-3 bg-danger text-white">Flex Item 1</div>
+            <div class="p-3 bg-dark text-white">Flex Item 2</div>
+            <div class="p-3 bg-warning text-white">Flex Item 3</div>
+            <div class="p-3 bg-primary text-white">Flex Item 4</div>
+        </div>
+        <div class="d-flex flex-column-reverse p-2 bg-secondary">
+            <div class="p-3 bg-danger text-white">Flex Item 1</div>
+            <div class="p-3 bg-dark text-white">Flex Item 2</div>
+            <div class="p-3 bg-warning text-white">Flex Item 3</div>
+            <div class="p-3 bg-primary text-white">Flex Item 4</div>
+        </div>
+
+
+        <hr class="my-5">
+        <h3 class="text-uppercase mb-5">justify-content-start, center, between, around, end</h3>
+        <div class="d-flex p-2 bg-secondary justify-content-start mb-3">
+            <div class="p-3 bg-danger text-white">start Flex Item 1</div>
+            <div class="p-3 bg-dark text-white">start Flex Item 2</div>
+            <div class="p-3 bg-warning text-white">start Flex Item 3</div>
+            <div class="p-3 bg-primary text-white">start Flex Item 4</div>
+        </div>
+        <div class="d-flex p-2 bg-secondary justify-content-center mb-3">
+            <div class="p-3 bg-danger text-white">center Flex Item 1</div>
+            <div class="p-3 bg-dark text-white">center Flex Item 2</div>
+            <div class="p-3 bg-warning text-white">center Flex Item 3</div>
+            <div class="p-3 bg-primary text-white">center Flex Item 4</div>
+        </div>
+        <div class="d-flex p-2 bg-secondary justify-content-between mb-3">
+            <div class="p-3 bg-danger text-white">between Flex Item 1</div>
+            <div class="p-3 bg-dark text-white">between Flex Item 2</div>
+            <div class="p-3 bg-warning text-white">between Flex Item 3</div>
+            <div class="p-3 bg-primary text-white">between Flex Item 4</div>
+        </div>
+        <div class="d-flex p-2 bg-secondary justify-content-around mb-3">
+            <div class="p-3 bg-danger text-white">around Flex Item 1</div>
+            <div class="p-3 bg-dark text-white">around Flex Item 2</div>
+            <div class="p-3 bg-warning text-white">around Flex Item 3</div>
+            <div class="p-3 bg-primary text-white">around Flex Item 4</div>
+        </div>
+        <div class="d-flex p-2 bg-secondary justify-content-end">
+            <div class="p-3 bg-danger text-white">end Flex Item 1</div>
+            <div class="p-3 bg-dark text-white">end Flex Item 2</div>
+            <div class="p-3 bg-warning text-white">end Flex Item 3</div>
+            <div class="p-3 bg-primary text-white">end Flex Item 4</div>
+        </div>
+    </div>
+    <!--Modal Sing in nav-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="OpenModalID" aria-labelledby="ModalTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalTitle">Sign in data attribute</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Email" class="col-form-label">Email:</label>
+                            <input type="email" class="form-control" id="Email">
+                            <div class="form-group">
+                                <label for="Password" class="col-form-label">Password:</label>
+                                <input type="password" class="form-control" id="Password">
+                            </div>
+                            <div class="form-group form-check">
+                                <label for="Check" class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" id="Check">Remember Me
+                                </label>
+                            </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success">Sing İn</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

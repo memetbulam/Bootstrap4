@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Lesson 38 Dropdown Kullanımı (Bölüm 3)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mb-5">
+        <h1 class="display-3 text-uppercase text-center">Dropdown 3</h1>
+        <h3 class="text-uppercase">dropdown - sadece ok'a tıklayınca açılan menü </h3>
+        <div class="btn-group">
+            <button type="button" class="btn btn-dark">Dropdown Split Button</button>
+            <button class="btn btn-dark dropdown-toggle" type="button" id="Menu" data-toggle="dropdown" aria-haspopup="true" 
+            aria-expanded="false"><span class="sr-only">Dropdown İşareti</span></button>
+            <div class="dropdown-menu" aria-labelledby="Menu">
+                <h5 class="dropdown-header">İstemci Bazlı JS</h5>
+                <a href="#" class="dropdown-item">JS</a>
+                <a href="#" class="dropdown-item">Angular JS</a>
+                <a href="#" class="dropdown-item">React JS</a>
+                <div class="dropdown-divider"></div>
+                <h5 class="dropdown-header">Sunucu Bazlı JS</h5>
+                <a href="#" class="dropdown-item">Node JS</a>
+            </div>
+        </div>
+
+        <hr class="my-5">
+        <h3 class="text-uppercase">dropdown - Vertical Dikey hizalama </h3>
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-dark">Asp.net</button>
+            <button type="button" class="btn btn-dark">Php</button>
+            <button class="btn btn-dark dropdown-toggle" type="button" id="Menu2" data-toggle="dropdown" aria-haspopup="true" 
+            aria-expanded="false">Dropdown Button</button>
+            <div class="dropdown-menu" aria-labelledby="Menu2">
+                <h5 class="dropdown-header">İstemci Bazlı JS</h5>
+                <a href="#" class="dropdown-item">JS</a>
+                <a href="#" class="dropdown-item">Angular JS</a>
+                <a href="#" class="dropdown-item">React JS</a>
+                <div class="dropdown-divider"></div>
+                <h5 class="dropdown-header">Sunucu Bazlı JS</h5>
+                <a href="#" class="dropdown-item">Node JS</a>
+            </div>
+        </div>
+
+        <hr class="my-5">
+        <h3 class="text-uppercase">dropdown - form</h3>
+        <div class="btn-group">
+            <button class="btn btn-dark dropdown-toggle" type="button" id="Menu" data-toggle="dropdown" aria-haspopup="true" 
+            aria-expanded="false">Dropdown Sing In Button</button>
+            <div class="dropdown-menu" aria-labelledby="Menu">
+                <form class="px-4 py-4">
+                    <div class="form-group">
+                        <label for="Email">Email Address</label>
+                        <input type="email" class="form-control" id="Email" placeholder="eposta@ornek.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="Password">Password</label>
+                        <input type="password" class="form-control" id="Password" placeholder="Şifrenizi Girin">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="Check">
+                        <label class="form-check-label" for="Check">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-dark mt-2 d-flex mx-auto">Sing in</button>
+                </form>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Yeni misin? üye olabilirsin</a>
+                <a href="#" class="dropdown-item">Şifreni mi unuttun?</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

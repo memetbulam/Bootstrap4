@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Lesson 30 List Groups</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container mb-5">
+        <h1 class="text-uppercase">list groups</h1>
+        <div class="col-4">
+            <h3>Default list</h3>
+            <ul>
+                <li>Php</li>
+                <li>Asp.net</li>
+                <li>Java</li>
+                <li>ColdFusion</li>
+                <li>Ruby</li>
+            </ul>
+
+            <hr class="my-5">
+            <h3>List Group</h3>
+            <ul class="list-group">
+                <li class="list-group-item">Php</li>
+                <li class="list-group-item">Asp.net</li>
+                <li class="list-group-item disabled">Java</li>
+                <li class="list-group-item active">ColdFusion</li>
+                <li class="list-group-item">Ruby</li>
+            </ul>
+
+            <hr class="my-5">
+            <h3>List Group LİNK</h3>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Php</a>
+                <a href="#" class="list-group-item list-group-item-action">Asp.net</a>
+                <a href="#" class="list-group-item list-group-item-action">Java</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">ColdFusion</a>
+                <a href="#" class="list-group-item list-group-item-action active">Ruby</a>
+            </div>
+
+            <hr class="my-5">
+            <h3>List Group BUTON</h3>
+            <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action">Php</button>
+                <button type="button" class="list-group-item list-group-item-action">Asp.net</button>
+                <button type="button" class="list-group-item list-group-item-action">Java</button>
+                <button type="button" class="list-group-item list-group-item-action" disabled>ColdFusion</button>
+                <button type="button" class="list-group-item list-group-item-action active">Ruby</button>
+            </div>
+
+            <hr class="my-5">
+            <h3>List Group ÇERÇEVELER</h3>
+            <div class="list-group">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Php</li>
+                    <li class="list-group-item">Asp.net</li>
+                    <li class="list-group-item">Java</li>
+                    <li class="list-group-item">ColdFusion</li>
+                    <li class="list-group-item">Ruby</li>
+                </ul>
+            </div>
+
+            <hr class="my-5">
+            <h3>List Group RENKLER</h3>
+            <div class="list-group">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-primary">Php</li>
+                    <li class="list-group-item list-group-item-success">Asp.net</li>
+                    <li class="list-group-item list-group-item-danger">Java</li>
+                    <li class="list-group-item list-group-item-info">ColdFusion</li>
+                    <li class="list-group-item list-group-item-warning">Ruby</li>
+                </ul>
+            </div>
+
+            <hr class="my-5">
+            <h3>List Group ROZETLER</h3>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">Php
+                    <span class="badge badge-danger badge-pill">8</span>
+                </li>
+                <li class="list-group-item">Asp.net</li>
+                <li class="list-group-item">Java</li>
+                <li class="list-group-item">ColdFusion</li>
+                <li class="list-group-item">Ruby</li>
+            </ul>
+
+
+        </div>
+        <div class="col-7">
+            <hr class="my-5">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h4 class="mb-3">En son yapılan yorumlar</h4>
+                        <small>3 gün önce</small>
+                    </div>
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <small>Fehmi UYAR</small>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h4 class="mb-3">En son yapılan yorumlar</h4>
+                        <small>3 gün önce</small>
+                    </div>
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <small>Fehmi UYAR</small>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h4 class="mb-3">En son yapılan yorumlar</h4>
+                        <small>3 gün önce</small>
+                    </div>
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <small>Fehmi UYAR</small>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

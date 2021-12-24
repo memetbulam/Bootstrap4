@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Lesson 43 Dinamik Sekme Yapımı</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mb-5">
+        <h1 class="display-3 text-uppercase text-center">Dinamik Sekme Yapımı</h1>
+        <!-- <h4 class="text-uppercase"> ul</h4>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">Profile</a>
+                <div class="mt-1 dropdown-menu">
+                    <a href="#" class="dropdown-item">İsim1</a>
+                    <a href="#" class="dropdown-item">İsim2</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">İsim3</a>
+                    <a href="#" class="dropdown-item">İsim4</a>
+                    <a href="#" class="dropdown-item">İsim5</a>
+                    <a href="#" class="dropdown-item">İsim6</a>
+                </div>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link disabled">Contact</a></li>
+        </ul>
+
+        <hr class="my-5">
+        <h4 class="text-uppercase">nav</h4>
+        <nav class="nav nav-pills">
+            <a href="#" class="nav-item nav-link active">Home</a>
+            <a href="#" class="nav-item nav-link">About Us</a>
+            <a href="#" class="nav-item nav-link">Profile</a>
+            <a href="#" class="nav-item nav-link">Contact</a>
+        </nav> -->
+
+        <!-- <hr class="my-5">
+        <h4 class="text-uppercase">Dinamik sekme - pills</h4>
+        <ul class="nav nav-pills" id="MyTab" role="tablist">
+            <li class="nav-item">
+                <a href="#Home" id="HomeTab" class="nav-link active" data-toggle="pill" role="tab" aria-controls="Home"
+                    aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#AboutUs" id="AboutTab" class="nav-link" data-toggle="pill" role="tab" aria-controls="AboutUs"
+                    aria-selected="false">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="#Profile" id="ProfileTab" class="nav-link" data-toggle="pill" role="tab" aria-controls="Profile"
+                    aria-selected="false">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a href="#Contact" id="ContactTab" class="nav-link" data-toggle="pill" role="tab" aria-controls="Contact"
+                    aria-selected="false">Contact</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="TabContent">
+            <div class="tab-pane fade show active p-3" id="Home" role="tabpanel" aria-labelledby="HomeTab">Ana
+                Sayfadasın!</div>
+            <div class="tab-pane fade p-3" id="AboutUs" role="tabpanel" aria-labelledby="AboutTab">Hakkımızda
+                Sayfasındasın!</div>
+            <div class="tab-pane fade p-3" id="Profile" role="tabpanel" aria-labelledby="ProfileTab">Profil
+                Sayfasındasın!</div>
+            <div class="tab-pane fade p-3" id="Contact" role="tabpanel" aria-labelledby="ContactTab">İletişim
+                Sayfasındasın!</div>
+        </div> -->
+
+
+        <!-- <hr class="my-5">
+        <h4 class="text-uppercase">Dinamik sekme - tabs</h4>
+        <ul class="nav nav-tabs" id="MyTab" role="tablist">
+            <li class="nav-item">
+                <a href="#Home" id="HomeTab" class="nav-link active" data-toggle="tab" role="tab" aria-controls="Home"
+                    aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#AboutUs" id="AboutTab" class="nav-link" data-toggle="tab" role="tab" aria-controls="AboutUs"
+                    aria-selected="false">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="#Profile" id="ProfileTab" class="nav-link" data-toggle="tab" role="tab" aria-controls="Profile"
+                    aria-selected="false">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a href="#Contact" id="ContactTab" class="nav-link" data-toggle="tab" role="tab" aria-controls="Contact"
+                    aria-selected="false">Contact</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="TabContent">
+            <div class="tab-pane fade show active p-3" id="Home" role="tabpanel" aria-labelledby="HomeTab">Ana
+                Sayfadasın!</div>
+            <div class="tab-pane fade p-3" id="AboutUs" role="tabpanel" aria-labelledby="AboutTab">Hakkımızda
+                Sayfasındasın!</div>
+            <div class="tab-pane fade p-3" id="Profile" role="tabpanel" aria-labelledby="ProfileTab">Profil
+                Sayfasındasın!</div>
+            <div class="tab-pane fade p-3" id="Contact" role="tabpanel" aria-labelledby="ContactTab">İletişim
+                Sayfasındasın!</div>
+        </div> -->
+
+
+        <!-- <hr class="my-5">
+        <h4 class="text-uppercase">Dinamik sekme - dikey hizalama</h4>
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="nav nav-pills flex-column" id="MyTab" role="tablist" aria-orientation="vertical">
+                    <a href="#Home" id="HomeTab" class="nav-link active" data-toggle="pill" role="tab"
+                        aria-controls="Home" aria-selected="true">Home</a>
+                    <a href="#AboutUs" id="AboutTab" class="nav-link" data-toggle="pill" role="tab"
+                        aria-controls="AboutUs" aria-selected="false">About Us</a>
+                    <a href="#Profile" id="ProfileTab" class="nav-link" data-toggle="pill" role="tab"
+                        aria-controls="Profile" aria-selected="false">Profile</a>
+                    <a href="#Contact" id="ContactTab" class="nav-link" data-toggle="pill" role="tab"
+                        aria-controls="Contact" aria-selected="false">Contact</a>
+                </div>
+            </div>
+            <div class="col-sm-10">
+                <div class="tab-content" id="TabContent">
+                    <div class="tab-pane fade show active p-3" id="Home" role="tabpanel" aria-labelledby="HomeTab">Ana
+                        Sayfadasın!</div>
+                    <div class="tab-pane fade p-3" id="AboutUs" role="tabpanel" aria-labelledby="AboutTab">Hakkımızda
+                        Sayfasındasın!</div>
+                    <div class="tab-pane fade p-3" id="Profile" role="tabpanel" aria-labelledby="ProfileTab">Profil
+                        Sayfasındasın!</div>
+                    <div class="tab-pane fade p-3" id="Contact" role="tabpanel" aria-labelledby="ContactTab">İletişim
+                        Sayfasındasın!</div>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

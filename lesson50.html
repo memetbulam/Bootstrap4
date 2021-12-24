@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Lesson 50 İnput Groups</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        body {
+            margin-bottom: 60px;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar bg-dark navbar-dark navbar-expand-lg">
+        <a href="#" class="navbar-brand"><img src="img/logo.png" alt="logo" style="width: 40px;"> Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavbarContentID"
+            aria-expanded="false" aria-label="Toggle Buton" aria-controls="NavbarContentID"><span
+                class="navbar-toggler-icon"></span></button>
+        <div id="NavbarContentID" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a href="#" class="nav-link">Home<span class="sr-only">Aktif
+                            sayfa</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="DropID" data-toggle="dropdown" role="button"
+                        aria-haspopup="true" aria-expanded="false">Software</a>
+                    <div class="dropdown-menu mt-3" aria-labelledby="DropID">
+                        <a href="#" class="dropdown-item">JS</a>
+                        <a href="#" class="dropdown-item">Angular JS</a>
+                        <a href="#" class="dropdown-item">React JS</a>
+                        <a href="#" class="dropdown-item">Vue JS</a>
+                        <a href="#" class="dropdown-item">Node JS</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Messages</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Settings</a></li>
+                <li class="nav-item"><a href="#" class="nav-link disabled">Contact<span class="sr-only">Pasif
+                            sayfa</span></a></li>
+            </ul>
+
+            <span class="navbar-text mr-3">Metin kısmı</span>
+            <form class="form-inline" action="#">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Arama">
+                <button class="btn btn-outline-success my-2" type="submit">Search</button>
+                <!-- <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="Add">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="Add">
+                </div> -->
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="container my-5">
+        <h1 class="display-4 text-center text-uppercase">İnput Groups</h1>
+        <h6 class="text-right text-lowercase">prepend= Başa ekle</h6>
+        <h6 class="text-right text-lowercase">append= Sona ekle</h6>
+        <form>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="Addon">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Username" name="User" id="User"
+                    aria-describedby="Addon2" aria-label="Username">
+                <input type="text" class="form-control" placeholder="Lastname" name="Lname" id="Lname"
+                    aria-describedby="Addon2" aria-label="Lastname">
+            </div>
+
+            <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Email" name="Mail" id="Mail"
+                    aria-describedby="Addon3" aria-label="Email">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="Addon4">Yardımcı Eposta</span>
+                    <span class="input-group-text" id="Addon3">@example.com</span>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+
+            <hr class="my-5">
+            <h2 class="text-uppercase">Checkbox Groups</h2>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Username" name="User" id="User"
+                    aria-describedby="Addon" aria-label="Username">
+                <div class="input-group-append">
+                    
+                    <div class="input-group-text">
+                        <input type="radio">
+                    </div>
+                </div>
+                
+            </div>
+
+            <hr class="my-5">
+            <h2 class="text-uppercase">Button Groups - Large</h2>
+            <div class="input-group mb-3 input-group-lg">
+                <div class="input-group-prepend">
+                    <button class="btn  btn-outline-secondary" type="button">Basit Buton</button>
+                </div>
+                <input type="text" class="form-control" placeholder="Username" name="User" id="User"
+                    aria-describedby="Addon2" aria-label="Username">
+            </div>
+
+
+            <hr class="my-5">
+            <h2 class="text-uppercase">Search Button - Small</h2>
+            <div class="input-group mb-3 input-group-sm">
+                <input type="search" class="form-control" placeholder="Search" name="Search" id="Search"
+                    aria-describedby="Addon5" aria-label="Search">
+                <div class="input-group-append">
+                    <button class="btn  btn-outline-success" type="submit">Search</button>
+                </div>
+            </div>
+
+
+            <hr class="my-5">
+            <h2 class="text-uppercase">textarea</h2>
+            <div class="input-group mb-3">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="Addon6">Textarea</span>
+                </div>
+                <textarea class="form-control" placeholder="Textarea" name="textarea" id="textarea" aria-describedby="Addon6"
+                    aria-label="textarea"></textarea>
+
+            </div>
+        </form>
+
+    </div>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

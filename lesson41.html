@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Lesson 41 Accordion Yapımı</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mb-5">
+        <h1 class="display-3 text-uppercase text-center">Accordion Yapımı</h1>
+        <h6 class="text-lowercase text-right">data-parent= birbirine bağladık</h6>
+        <div class="accordion" id="accorID">
+            <div class="card">
+                <div class="card-header" id="HeaderOne">
+                    <h5 class="mb-0">
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">Açılıp kapanabilir sekme 1</a>
+                    </h5>
+                </div>
+                <div class="collapse show" id="collapseOne" aria-labelledby="HeaderOne" data-parent="#accorID">
+                    <div class="card-body">Card Body 1</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="HeaderTwo">
+                    <h5 class="mb-0">
+                        <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">Açılıp kapanabilir sekme 2</button>
+                    </h5>
+                </div>
+                <div class="collapse " id="collapseTwo" aria-labelledby="HeaderTwo" data-parent="#accorID">
+                    <div class="card-body">Card Body 2</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="HeaderThree">
+                    <h5 class="mb-0">
+                        <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">Açılıp kapanabilir sekme 3</button>
+                    </h5>
+                </div>
+                <div class="collapse " id="collapseThree" aria-labelledby="HeaderThree" data-parent="#accorID">
+                    <div class="card-body">Card Body 3</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

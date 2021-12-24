@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Lesson 39 Collapse Kullanımı</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mb-5">
+        <h1 class="display-3 text-uppercase text-center">Collapse Kullanımı</h1>
+
+        <!-- <h3 class="text-uppercase">Collapse - link - Metin gizleme</h3>
+        <h6 class="text-lowercase text-right mb-5">data-toggle linklerde kullanılmaz, Show=göster</h6>
+        <p>
+            <button type="button" class="btn btn-dark" data-toggle="collapse" data-target="#CollapseID"
+                aria-expanded="false" aria-controls="CollapseID">Lütfen bana tıkla - BUTTON</button>
+            <a role="button" class="btn btn-secondary" data-toggle="collapse" href="#CollapseID" aria-expanded="true"
+                aria-controls="CollapseID">please click me - LİNK</a>
+        </p>
+        <div id="CollapseID" class="collapse show">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.</div> -->
+
+
+        <!-- <hr class="my-5">
+        <h3 class="text-uppercase">Collapse - card</h3>
+        <h6 class="text-lowercase text-right mb-5"></h6>
+        <p>
+            <button type="button" class="btn btn-dark" data-toggle="collapse" data-target="#CollapseID"
+                aria-expanded="false" aria-controls="CollapseID">Lütfen bana tıkla</button>
+            <a role="button" class="btn btn-secondary" data-toggle="collapse" href="#CollapseID" aria-expanded="true"
+                aria-controls="CollapseID">please click me</a>
+        </p>
+        <div id="CollapseID" class="collapse">
+            <div class="card border-success">
+                <div class="card-body text-success">
+                    <h5 class="card-title">Collapse Kullanımı</h5>
+                    <p class="card-text">ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div> -->
+
+
+        <hr class="my-5">
+        <h3 class="text-uppercase">Collapse - Çoklu</h3>
+        <h6 class="text-lowercase text-right">aria-expanded= açıkmı kapalımı?</h6>
+        <h6 class="text-lowercase text-right">aria-controls= hangisini açıp kapatacaksın?</h6>
+        <h6 class="text-lowercase text-right mb-5">data-target= buton için hedef belirle</h6>
+        <p>
+            <a role="button" class="btn btn-danger" data-toggle="collapse" href="#CollapseID1" aria-expanded="true"
+                aria-controls="CollapseID1">İlk Toggle</a>
+            <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#CollapseID2"
+                aria-expanded="false" aria-controls="CollapseID2">İkinci Toggle</button>
+            <button type="button" class="btn btn-dark" data-toggle="collapse" data-target=".multi-collapse"
+                aria-expanded="false" aria-controls="CollapseID1 CollapseID2">Her ikisine toggle uygula</button>
+        </p>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="collapse multi-collapse" id="CollapseID1">
+                    <div class="card border-success">
+                        <div class="card-body text-success">
+                            <h5 class="card-title">İlk Collapse Kullanımı</h5>
+                            <p class="card-text">ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="collapse multi-collapse" id="CollapseID2">
+                    <div class="card border-danger">
+                        <div class="card-body text-danger">
+                            <h5 class="card-title">İkinci Collapse Kullanımı</h5>
+                            <p class="card-text">ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

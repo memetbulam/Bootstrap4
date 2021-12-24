@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Lesson 19 Tablolar (Bölüm 2)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h4>TABLE-SM=KÜÇÜK TABLO, İÇ BOŞLUKLARI DÜŞÜRÜR</h4>
+        <table class="table table-sm">
+            <caption>Kullanıcı Listesi</caption>
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">FirstName</th>
+                    <th scope="col">LastName</th>
+                    <th scope="col">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>isim1</td>
+                    <td>soyisim1</td>
+                    <td>email1@gmail.com</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>isim2</td>
+                    <td>soyisim2</td>
+                    <td>email2@gmail.com</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>isim3</td>
+                    <td>soyisim3</td>
+                    <td>email3@gmail.com</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>isim4</td>
+                    <td>soyisim4</td>
+                    <td>email4@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>TOBLO RENKLENDİRME - KOYU RENK İÇİN ARKAPLAN RENGİ UYGULANIR</h4>
+        <table class="table">
+            <caption>Kullanıcı Listesi</caption>
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">FirstName</th>
+                    <th scope="col">LastName</th>
+                    <th scope="col">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-primary">
+                    <th scope="row">1</th>
+                    <td>isim1</td>
+                    <td>soyisim1</td>
+                    <td>email1@gmail.com</td>
+                </tr>
+                <tr class="table-secondary">
+                    <th scope="row">2</th>
+                    <td>isim2</td>
+                    <td>soyisim2</td>
+                    <td>email2@gmail.com</td>
+                </tr>
+                <tr class="bg-danger">
+                    <th scope="row">3</th>
+                    <td>isim3</td>
+                    <td>soyisim3</td>
+                    <td>email3@gmail.com</td>
+                </tr>
+                <tr class="table-warning">
+                    <th scope="row">4</th>
+                    <td>isim4</td>
+                    <td>soyisim4</td>
+                    <td>email4@gmail.com</td>
+                </tr>
+                <tr class="table-active">
+                    <th scope="row">5</th>
+                    <td>isim5</td>
+                    <td>soyisim5</td>
+                    <td>email5@gmail.com</td>
+                </tr>
+                <tr class="bg-info">
+                    <th scope="row">6</th>
+                    <td>isim6</td>
+                    <td>soyisim6</td>
+                    <td>email6@gmail.com</td>
+                </tr>
+                <tr class="table-light">
+                    <th scope="row">7</th>
+                    <td>isim7</td>
+                    <td>soyisim7</td>
+                    <td>email7@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>TOBLO RENKLENDİRME 2. ÖRNEK</h4>
+        <table class="table table-sm">
+            <caption>Kullanıcı Listesi</caption>
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">FirstName</th>
+                    <th scope="col">LastName</th>
+                    <th scope="col">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>isim1</td>
+                    <td>soyisim1</td>
+                    <td>email1@gmail.com</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>isim2</td>
+                    <td>soyisim2</td>
+                    <td>email2@gmail.com</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>isim3</td>
+                    <td class="table-danger">soyisim3</td>
+                    <td>email3@gmail.com</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>isim4</td>
+                    <td>soyisim4</td>
+                    <td>email4@gmail.com</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>isim5</td>
+                    <td>soyisim5</td>
+                    <td>email5@gmail.com</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>isim6</td>
+                    <td>soyisim6</td>
+                    <td>email6@gmail.com</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>isim7</td>
+                    <td>soyisim7</td>
+                    <td>email7@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>XL VE ALTI RESPONSİVE TABLO</h4>
+        <div class="table-responsive-xl">
+            <table class="table table-sm">
+                <caption>Kullanıcı Listesi</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">FirstName</th>
+                        <th scope="col">LastName</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Job</th>
+                        <th scope="col">Gender</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>isim1</td>
+                        <td>soyisim1</td>
+                        <td>email1@gmail.com</td>
+                        <td>age1</td>
+                        <td>job1</td>
+                        <td>male1</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>isim2</td>
+                        <td>soyisim2</td>
+                        <td>email2@gmail.com</td>
+                        <td>age2</td>
+                        <td>job2</td>
+                        <td>female1</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>isim3</td>
+                        <td>soyisim3</td>
+                        <td>email3@gmail.com</td>
+                        <td>age3</td>
+                        <td>job3</td>
+                        <td>male2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>isim4</td>
+                        <td>soyisim4</td>
+                        <td>email4@gmail.com</td>
+                        <td>age4</td>
+                        <td>job4</td>
+                        <td>female2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>isim5</td>
+                        <td>soyisim5</td>
+                        <td>email5@gmail.com</td>
+                        <td>age5</td>
+                        <td>job5</td>
+                        <td>male3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>isim6</td>
+                        <td>soyisim6</td>
+                        <td>email6@gmail.com</td>
+                        <td>age6</td>
+                        <td>job6</td>
+                        <td>female3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>isim7</td>
+                        <td>soyisim7</td>
+                        <td>email7@gmail.com</td>
+                        <td>age7</td>
+                        <td>job7</td>
+                        <td>male4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

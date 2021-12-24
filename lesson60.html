@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Lesson 60 Popover Kullanımı</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        body {
+            margin-bottom: 60px;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Nav Menu-->
+    <nav class="navbar bg-dark navbar-dark navbar-expand-lg">
+        <a href="#" class="navbar-brand"><img src="img/logo.png" alt="logo" style="width: 40px;"> Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavbarContentID"
+            aria-expanded="false" aria-label="Toggle Buton" aria-controls="NavbarContentID"><span
+                class="navbar-toggler-icon"></span></button>
+        <div id="NavbarContentID" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a href="#" class="nav-link">Home<span class="sr-only">Aktif
+                            sayfa</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="DropID" data-toggle="dropdown" role="button"
+                        aria-haspopup="true" aria-expanded="false">Software</a>
+                    <div class="dropdown-menu mt-3" aria-labelledby="DropID">
+                        <a href="#" class="dropdown-item">JS</a>
+                        <a href="#" class="dropdown-item">Angular JS</a>
+                        <a href="#" class="dropdown-item">React JS</a>
+                        <a href="#" class="dropdown-item">Vue JS</a>
+                        <a href="#" class="dropdown-item">Node JS</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Messages</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Settings</a></li>
+                <li class="nav-item"><a href="#" class="nav-link disabled">Contact<span class="sr-only">Pasif
+                            sayfa</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-toggle="modal" data-target="#OpenModalID"
+                        data-backdrop="static" data-keyboard="false">Sing İn</a></li>
+            </ul>
+
+            <span class="navbar-text mr-3">Metin kısmı</span>
+            <form class="form-inline" action="#">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Arama">
+                <button class="btn btn-outline-success my-2" type="submit">Search</button>
+                <!-- <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="Add">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="Add">
+                </div> -->
+            </form>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="display-4 text-center text-uppercase mb-5">Popover Kullanımı</h1>
+        <!-- data-trigger="focus"= otomatik kapatır-->
+        <!-- <h3 class="text-uppercase mb-5">Popover ve Konumlar</h3>
+        <a href="#" class="btn btn-dark mr-5" data-toggle="popover" title="title bölümü"
+            data-content="data content bölümü" data-trigger="focus" id="BtnP">Popover</a>
+        <a href="#" class="btn btn-dark mr-5" data-toggle="popover" data-placement="top" title="title bölümü"
+            data-content="data content bölümü" id="BtnT">Top Popover</a>
+        <a href="#" class="btn btn-dark mr-5" data-toggle="popover" data-placement="bottom" title="title bölümü"
+            data-content="data content bölümü" id="BtnB">Bottom Popover</a>
+        <a href="#" class="btn btn-dark mr-5" data-toggle="popover" data-placement="left" title="title bölümü"
+            data-content="data content bölümü" id="BtnL">Left Popover</a>
+        <a href="#" class="btn btn-dark mr-5" data-toggle="popover" data-placement="right" title="title bölümü"
+            data-content="data content bölümü" data-trigger="hover" id="BtnR">Right Popover</a>
+
+        <hr class="my-5">
+        <h3 class="text-uppercase mb-5">Popover Javascript</h3>
+        <a href="#" class="btn btn-dark mr-5" id="Btn1">Click Popover</a>
+        <a href="#" class="btn btn-dark mr-5" data-placement="top" id="Btn2">Hover Popover</a>
+        <a href="#" class="btn btn-dark mr-5" id="Btn3">Focus Popover</a>
+        <a href="#" class="btn btn-dark mr-5" id="Btn4">Left Popover</a>
+        <a href="#" class="btn btn-dark mr-5" data-toggle="popover" data-placement="right" data-trigger="hover" id="Btn5">Right Popover</a> -->
+
+        <hr class="my-5">
+        <h3 class="text-uppercase mb-5">Popover show - hide - toggle - dispose</h3>
+        <a href="#" data-toggle="popover" title="title kısmı" data-content="content kısmı" >Popover Uygula</a>
+        <div class="row my-5">
+            <button type="button" class="btn btn-dark mr-5" id="BtnShow">Show</button>
+            <button type="button" class="btn btn-dark mr-5" id="BtnHide">Hide</button>
+            <button type="button" class="btn btn-dark mr-5" id="BtnToggle">Toggle</button>
+            <button type="button" class="btn btn-dark mr-5" id="BtnDispose">Dispose</button>
+        </div>
+    </div>
+    <!--Modal Sing in nav-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="OpenModalID" aria-labelledby="ModalTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalTitle">Sign in data attribute</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Email" class="col-form-label">Email:</label>
+                            <input type="email" class="form-control" id="Email">
+                            <div class="form-group">
+                                <label for="Password" class="col-form-label">Password:</label>
+                                <input type="password" class="form-control" id="Password">
+                            </div>
+                            <div class="form-group form-check">
+                                <label for="Check" class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" id="Check">Remember Me
+                                </label>
+                            </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success">Sing İn</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        $(document).ready(function () {
+            // $('[data-toggle="popover"]').popover();
+            // $('#Btn1').popover({
+            //     title: "Btn1 js popover title",
+            //     content: "Btn1 js popover content",
+            //     animation: true,
+            //     delay: 1000,
+            //     trigger: "click"
+            // });
+            // $('#Btn2').popover({
+            //     title: "Btn2 js <strong>popover</strong> title",
+            //     content: "Btn2 <code>js</code> popover content",
+            //     animation: false,
+            //     delay: { show: 500, hide: 1000 },
+            //     html: true,
+            //     trigger: "hover"
+            // });
+            // $('#Btn3').popover({
+            //     title: "Btn2 js <strong>popover</strong> title",
+            //     content: "Btn2 <code>js</code> popover content",
+            //     animation: false,
+            //     delay: { show: 1000, hide: 0 },
+            //     html: true,
+            //     trigger: "focus",
+            //     placement: "bottom"
+            // });
+
+            // $('#Btn4').popover({
+            //     title: "Btn2 js <strong>popover</strong> title",
+            //     content: "Btn2 <code>js</code> popover content",
+            //     animation: false,
+            //     delay: { show: 300, hide: 0 },
+            //     html: true,
+            //     trigger: "hover",
+            //     placement: "left"
+            // });
+
+
+            $('#BtnShow').click(function () {
+                $('[data-toggle="popover"]').popover("show");
+            });
+            $('#BtnHide').click(function () {
+                $('[data-toggle="popover"]').popover("hide");
+            });
+            $('#BtnToggle').click(function () {
+                $('[data-toggle="popover"]').popover("toggle");
+            });
+            $('#BtnDispose').click(function () {
+                $('[data-toggle="popover"]').popover("dispose");
+            });
+
+            $('[data-toggle="popover"]').on('show.bs.popover',function(){
+                alert('Popover Gösterilmek Üzere...');
+            });
+            $('[data-toggle="popover"]').on('shown.bs.popover',function(){
+                alert('Popover Gösterildi.');
+            });
+            $('[data-toggle="popover"]').on('hide.bs.popover',function(){
+                alert('Popover Gizlenmek Üzere...');
+            });
+            $('[data-toggle="popover"]').on('hidden.bs.popover',function(){
+                alert('Popover Gizlendi.');
+            });
+        });
+    </script>
+</body>
+
+</html>

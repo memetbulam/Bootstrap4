@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Lesson 7 Grid Sistemin Özellikleri</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+        div {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container-fluid">
+            <div class="row" style="background-color: darkred;">
+                <div class="col-1">xl-1 lg-1 md-1 sm-1 col-1</div>
+                <div class="col-1">xl-1 lg-1 md-1 sm-1 col-1</div>
+                <div class="col-1">xl-1 lg-1 md-1 sm-1 col-1</div>
+                <div class="col-1">xl-1 lg-1 md-1 sm-1 col-1</div>
+                <div class="col-1">xl-1 lg-1 md-1 sm-1 col-1</div>
+                <div class="col-1">xl-1 lg-1 md-1 sm-1 col-1</div>
+                <div class="col-1">xl-1 lg-1 md-1 sm-1 col-1</div>
+                <div class="col-1">xl-1 lg-1 md-1 sm-1 col-1</div>
+                <div class="col-1">xl-1 lg-1 md-1 sm-1 col-1</div>
+                <div class="col-1">xl-1 lg-1 md-1 sm-1 col-1</div>
+                <div class="col-1">xl-1 lg-1 md-1 sm-1 col-1</div>
+                <div class="col-1">xl-1 lg-1 md-1 sm-1 col-1</div>
+            </div>
+            <div class="row" style="background-color: darkgreen;">
+                <div class="col-2">xl-2 lg-2 md-2 sm-2 col-2</div>
+                <div class="col-2">xl-2 lg-2 md-2 sm-2 col-2</div>
+                <div class="col-2">xl-2 lg-2 md-2 sm-2 col-2</div>
+                <div class="col-2">xl-2 lg-2 md-2 sm-2 col-2</div>
+                <div class="col-2">xl-2 lg-2 md-2 sm-2 col-2</div>
+                <div class="col-2">xl-2 lg-2 md-2 sm-2 col-2</div>
+            </div>
+            <div class="row" style="background-color: darkgoldenrod;">
+                <div class="col-4">xl-4 lg-4 md-4 sm-4 col-4</div>
+                <div class="col-4">xl-4 lg-4 md-4 sm-4 col-4</div>
+                <div class="col-4">xl-4 lg-4 md-4 sm-4 col-4</div>
+            </div>
+            <div class="row" style="background-color: darkmagenta;">
+                <div class="col-6">xl-6 lg-6 md-6 sm-6 col-6</div>
+                <div class="col-6">xl-6 lg-6 md-6 sm-6 col-6</div>
+            </div>
+            <div class="row" style="background-color: darksalmon;">
+                <div class="col-12">xl-12 lg-12 md-12 sm-12 col-12</div>
+            </div>
+            <div class="row" style="background-color: darkred;">
+                <div class="col-4">xl-4 lg-4 md-4 sm-4 col-4</div>
+                <div class="col-8">xl-8 lg-8 md-8 sm-8 col-8</div>
+            </div>
+        </div> -->
+
+
+    <h1>ALT KISIM IZGARA SİSTEMİNİN DEVAMI</h1>
+    <h2>SATIR İLE DİKEYDE HİZALAMA</h2>
+    <div class="container-fluid" style="height: 400px;">
+        <div class="row align-items-start" style="background-color: darkolivegreen;">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="height: 400px;">
+        <div class="row align-items-center" style="background-color: darkmagenta;">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="height: 400px;">
+        <div class="row align-items-end" style="background-color: darkorange;">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+    </div>
+
+    <!-- <h2>SÜTUN İLE DİKEYDE HİZALAMA</h2>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col align-self-start" style="background-color: darkolivegreen;">align-self-start</div>
+                <div class="col align-self-center" style="background-color: darkmagenta;">align-self-center</div>
+                <div class="col align-self-end" style="background-color: darkorange;">align-self-end</div>
+            </div>
+        </div> -->
+
+    <!-- <h2>YATAYDA HİZALAMA</h2>
+        <div class="container-fluid">
+            <div class="row justify-content-start">
+                <div class="col-4">1 of two columns</div>
+                <div class="col-4">2 of two columns</div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-4">1 of two columns</div>
+                <div class="col-4">2 of two columns</div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="col-4">1 of two columns</div>
+                <div class="col-4">2 of two columns</div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-4">1 of two columns</div>
+                <div class="col-4">2 of two columns</div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-4">1 of two columns</div>
+                <div class="col-4">2 of two columns</div>
+            </div>
+            <div class="row justify-content-evenly">
+                <div class="col-4">1 of two columns</div>
+                <div class="col-4">2 of two columns</div>
+            </div>
+          </div> -->
+
+
+    <!--no-gutters= right ve left dış boşluğu sıfırlar-->
+    <!-- <div class="container">
+            <div class="row no-gutters">
+                <div class="col-12 col-sm-6 col-md-8">.col-12 .col-sm-6 .col-md-8</div>
+                <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+              <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+              <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+          
+              <!-- w-100= sütunları kırarak bir alt satıra geçer 
+              <div class="w-100"></div>
+          
+              <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+              <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+            </div>
+          </div> -->
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Lesson 31 Liste Gruplarıyla Tab Yapımı</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-uppercase text-center">list groups</h1>
+        <h3>data-toggle="list"</h3>
+        <div class="row">
+            <div class="col-4">
+                <div class="list-group" id="myList" role="tablist">
+                    <a href="#HList" class="list-group-item list-group-item-action active" id="Home" role="tab" aria-controls="Anasayfa">Ana Sayfa</a>
+                    <a href="#PList" class="list-group-item list-group-item-action" id="Profile" role="tab" aria-controls="Profil">Profil</a>
+                    <a href="#MList" class="list-group-item list-group-item-action" id="Messagess" role="tab" aria-controls="Mesajlar">Mesajlar</a>
+                    <a href="#SList" class="list-group-item list-group-item-action" id="Settings" role="tab" aria-controls="Ayarlar">Ayarlar</a>
+                </div>
+            </div>
+            <div class="col-8 bg-dark text-light p-3">
+                <div class="tab-content" id="TabContent">
+                    <div class="tab-pane fade show active" id="HList" role="tabpanel" aria-labelledby="Home">
+                        Home sayfasına geldiniz.
+                    </div>
+                    <div class="tab-pane fade " id="PList" role="tabpanel" aria-labelledby="Profile">
+                        Profile sayfasına geldiniz.
+                    </div>
+                    <div class="tab-pane fade " id="MList" role="tabpanel" aria-labelledby="Messagess">
+                        Messages sayfasına geldiniz.
+                    </div>
+                    <div class="tab-pane fade " id="SList" role="tabpanel" aria-labelledby="Settings">
+                        Settings sayfasına geldiniz.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        $('#myList a').on('click', function(e) {
+            e.preventDefault();
+            $(this).tab('show');
+        })
+    </script>
+</body>
+
+</html>

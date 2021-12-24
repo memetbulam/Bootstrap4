@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Lesson 23 Alerts (Bölüm 2)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>ALERT-DİSMİSSİBLE=KAPATILABİLİR ALERT</h3>
+        <h3>ARİA-LABEL=STRİNG OLDUĞUNU BELİRTİR</h3>
+        <div class="alert alert-danger alert-dismissible" role="alert">
+            KAPATILABİLİR - ALERT DİSMİSSİBLE="ALERT"
+            <button type="button" class="close" aria-label="Kapat" data-dismiss="alert"><span aria-hidden="true">&times</span></button>
+        </div>
+
+        <h3>FADE SHOW= AÇILIP KAPANMA ANİMASYONU</h3>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            KAPATILABİLİR - ALERT DİSMİSSİBLE - FADE SHOW
+            <button type="button" class="close" aria-label="Kapat" data-dismiss="alert"><span aria-hidden="true">&times</span></button>
+        </div>
+
+        <h3>JQUERY ALERT</h3>
+        <div class="alert alert-success alert-dismissible fade show" role="alert" id="myAlert">
+            KAPATILABİLİR - JQUERY
+            <button type="button" class="close" aria-label="Kapat"><span aria-hidden="true">&times</span></button>
+        </div>
+
+        <h3>JQUERY ALER - MESAJ CLOSE</h3>
+        <div class="alert alert-success alert-dismissible fade show" role="alert" id="myAlertClose">
+            KAPATILABİLİR - JQUERY MESAJ CLOSE
+            <button type="button" class="close" aria-label="Kapat" data-dismiss="alert"><span aria-hidden="true">&times</span></button>
+        </div>
+
+        <h3>JQUERY ALER - MESAJ CLOSED</h3>
+        <div class="alert alert-success alert-dismissible fade show" role="alert" id="myAlertClosed">
+            KAPATILABİLİR - JQUERY MESAJ CLOSED
+            <button type="button" class="close" aria-label="Kapat" data-dismiss="alert"><span aria-hidden="true">&times</span></button>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.close').click(function() {
+                $('#myAlert').alert('close');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#myAlertClose').on('close.bs.alert', function() {
+                alert("Alerti gösterdim daha sonra kapattım");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#myAlertClosed').on('closed.bs.alert', function() {
+                alert("Alerti kapattıktan sonra mesaj verdim");
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Lesson 63 Utilities (Bölüm 2)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--Nav Menu-->
+    <nav class="navbar bg-dark navbar-dark navbar-expand-lg">
+        <a href="#" class="navbar-brand"><img src="img/logo.png" alt="logo" style="width: 40px;"> Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavbarContentID"
+            aria-expanded="false" aria-label="Toggle Buton" aria-controls="NavbarContentID"><span
+                class="navbar-toggler-icon"></span></button>
+        <div id="NavbarContentID" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a href="#" class="nav-link">Home<span class="sr-only">Aktif
+                            sayfa</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="DropID" data-toggle="dropdown" role="button"
+                        aria-haspopup="true" aria-expanded="false">Software</a>
+                    <div class="dropdown-menu mt-3" aria-labelledby="DropID">
+                        <a href="#" class="dropdown-item">JS</a>
+                        <a href="#" class="dropdown-item">Angular JS</a>
+                        <a href="#" class="dropdown-item">React JS</a>
+                        <a href="#" class="dropdown-item">Vue JS</a>
+                        <a href="#" class="dropdown-item">Node JS</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Messages</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Settings</a></li>
+                <li class="nav-item"><a href="#" class="nav-link disabled">Contact<span class="sr-only">Pasif
+                            sayfa</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-toggle="modal" data-target="#OpenModalID"
+                        data-backdrop="static" data-keyboard="false">Sing İn</a></li>
+            </ul>
+
+            <span class="navbar-text mr-3">Metin kısmı</span>
+            <form class="form-inline" action="#">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Arama">
+                <button class="btn btn-outline-success my-2" type="submit">Search</button>
+                <!-- <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="Add">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="Add">
+                </div> -->
+            </form>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <h1 class="display-4 text-center text-uppercase mb-5">Utilities (Bölüm 2)</h1>
+        <h3 class="text-uppercase mb-5">Shadows</h3>
+        <div class="shadow-none p-3 my-5 bg-white">No Shadow</div>
+        <div class="shadow p-3 my-5 bg-white">Default Shadow</div>
+        <div class="shadow-sm p-3 my-5 bg-white">Small Shadow</div>
+        <div class="shadow-lg p-3 my-5 bg-white">Large Shadow</div>
+        <div class="shadow-lg rounded p-3 my-5 bg-white">Large Rounded Shadow</div>
+
+        <hr class="my-5">
+        <h3 class="text-uppercase mb-2">Dikey hizalama</h3>
+        <span class="align-baseline mr-2">baseline</span>
+        <span class="align-top mr-2">top</span>
+        <span class="align-middle mr-2">middle</span>
+        <span class="align-bottom mr-2">bottom</span>
+        <span class="align-text-bottom mr-2">text-bottom</span>
+        <span class="align-text-top mr-2">text-top</span>
+
+        <hr class="my-5">
+        <h3 class="text-uppercase mb-2">Responsive</h3>
+        <h3 class="text-uppercase mb-2">1by1</h3>
+        <div class="embed-responsive embed-responsive-1by1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZIABeUhiP98"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <h3 class="text-uppercase mb-2">16by9</h3>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZIABeUhiP98"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <h3 class="text-uppercase mb-2">21by9</h3>
+        <div class="embed-responsive embed-responsive-21by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZIABeUhiP98"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <h3 class="text-uppercase mb-2">4by3</h3>
+        <div class="embed-responsive embed-responsive-4by3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZIABeUhiP98"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <!--Modal Sing in nav-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="OpenModalID" aria-labelledby="ModalTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalTitle">Sign in data attribute</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Kapat">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Email" class="col-form-label">Email:</label>
+                            <input type="email" class="form-control" id="Email">
+                            <div class="form-group">
+                                <label for="Password" class="col-form-label">Password:</label>
+                                <input type="password" class="form-control" id="Password">
+                            </div>
+                            <div class="form-group form-check">
+                                <label for="Check" class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" id="Check">Remember Me
+                                </label>
+                            </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success">Sing İn</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Lesson 42 Nav Kullanımı</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mb-5">
+        <h1 class="display-3 text-uppercase text-center">Nav Kullanımı</h1>
+        <h4 class="text-uppercase"> default</h4>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <hr class="my-5">
+        <h4 class="text-uppercase"> nav bootstrap 4</h4>
+        <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+            <li class="nav-item"><a href="#" class="nav-link disabled">Contact</a></li>
+        </ul>
+
+        <hr class="my-5">
+        <h4 class="text-uppercase"> html 5 nav</h4>
+        <nav class="nav">
+            <a href="#" class="nav-link active">Home</a>
+            <a href="#" class="nav-link">About Us</a>
+            <a href="#" class="nav-link">Profile</a>
+            <a href="#" class="nav-link disabled">Contact</a>
+        </nav>
+
+
+        <hr class="my-5">
+        <h4 class="text-uppercase"> yatay hizalama</h4>
+        <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+            <li class="nav-item"><a href="#" class="nav-link disabled">Contact</a></li>
+        </ul>
+
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+            <li class="nav-item"><a href="#" class="nav-link disabled">Contact</a></li>
+        </ul>
+
+        <ul class="nav justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+            <li class="nav-item"><a href="#" class="nav-link disabled">Contact</a></li>
+        </ul>
+
+        <hr class="my-5">
+        <h4 class="text-uppercase"> dikey hizalama</h4>
+        <ul class="nav flex-column">
+            <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+            <li class="nav-item"><a href="#" class="nav-link disabled">Contact</a></li>
+        </ul>
+
+        <hr class="my-5">
+        <h4 class="text-uppercase"> nav tabs - sekme</h4>
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active">About Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+            <li class="nav-item"><a href="#" class="nav-link disabled">Contact</a></li>
+        </ul>
+
+        <hr class="my-5">
+        <h4 class="text-uppercase"> nav tabs fill - boşlukları doldur</h4>
+        <ul class="nav nav-tabs nav-fill">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active">About Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+            <li class="nav-item"><a href="#" class="nav-link disabled">Contact</a></li>
+        </ul>
+
+        <hr class="my-5">
+        <h4 class="text-uppercase"> nav pills</h4>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+            <li class="nav-item"><a href="#" class="nav-link disabled">Contact</a></li>
+        </ul>
+
+        <hr class="my-5">
+        <h4 class="text-uppercase"> nav fill - boşlukları doldur</h4>
+        <nav class="nav nav-pills nav-fill">
+            <a href="#" class="nav-item nav-link active">Home Home Home Home Home Home Home</a>
+            <a href="#" class="nav-item nav-link">About Us</a>
+            <a href="#" class="nav-item nav-link">Profile</a>
+            <a href="#" class="nav-item nav-link disabled">Contact</a>
+        </nav>
+
+        <hr class="my-5">
+        <h4 class="text-uppercase"> nav justified - eşit aralıklarla doldurma</h4>
+        <nav class="nav nav-pills nav-justified">
+            <a href="#" class="nav-item nav-link active">Home Home Home Home Home Home Home</a>
+            <a href="#" class="nav-item nav-link">About Us</a>
+            <a href="#" class="nav-item nav-link">Profile</a>
+            <a href="#" class="nav-item nav-link disabled">Contact</a>
+        </nav>
+
+
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
